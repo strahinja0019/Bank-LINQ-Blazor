@@ -1,7 +1,7 @@
-# Bank-LINQ-Blazor
+# Bank-LINQ CLI
 
 ## 📖 Overview
-This project is a modern version of a N-Tier banking application, it replaces traditional presentation layers with a reactive Blazor front-end while keeping a traditional Business Logic Layer and Data Access Layer.
+This project is a CLI version of a N-Tier banking application, it uses Console App for Presentation, it is just a stepping stone for a later newer implementation.
 
 The system is designed to simulate core banking operations including:
 * Account Management: Real-time lifecycle management of customer accounts.
@@ -11,22 +11,22 @@ The system is designed to simulate core banking operations including:
 * Fund Transfers: ACID-compliant processing of peer-to-peer transfers.
 
 ---
-## ☁️ Cloud-Based Database
+## 🔒 Local Database
 
-This project utilizes [CockroachDB](https://cockroachlabs.cloud).
+This project uses a local database
 
-* Why CockroachDB? It offers a free cloud-based, distributed PostgreSQL environment.
+* Why a local database and not cloud? It is just a small prototype and it just serves as a test.
 
-* Benefit: It provides serverless scaling and allows for secure, encrypted connection strings, making it ideal for distributed banking simulations.
+* Benefit: It allows for instantaniuos change and is secure because i am the only one who can access it.
 
 ---
 
 ## 🛠 Tech Stack
 
-Frontend: [Blazor](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor), CSS3
+Frontend: Console Line Interface
 
-Backend/Logic: C#, .NET 8.0, LINQ
+Backend/Logic: C#, .NET 4.8 Framework, LINQ
 
-Database: [CockroachDB](https://cockroachlabs.cloud) (PostgreSQL Protocol)
+Database: Local Database
 
 Tools: Visual Studio 2022
