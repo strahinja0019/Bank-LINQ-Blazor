@@ -22,7 +22,7 @@ namespace Common
         }
     
         public int accountId { get; set; }
-        public int accountNumber { get; set; }
+        public string IBAN { get; set; }
         public string accountType { get; set; }
         public string firstName { get; set; }
         public string lastName { get; set; }

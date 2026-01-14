@@ -18,7 +18,7 @@ namespace Common
         public int accountId { get; set; }
         public string type { get; set; }
         public decimal amount { get; set; }
-        public System.TimeSpan timeTaken { get; set; }
+        public System.DateTime timeStamp { get; set; }
         public string status { get; set; }
     
         public virtual Account Account { get; set; }

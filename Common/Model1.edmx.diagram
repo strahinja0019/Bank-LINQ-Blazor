@@ -6,7 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="3d15b1bddf9445be91bd290b2c2f5438" Name="Diagram1">
         <EntityTypeShape EntityType="BankModel.Account" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="BankModel.Transaction" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BankModel.Transaction" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
         <AssociationConnector Association="BankModel.transactions_accountid_fkey" ManuallyRouted="false" />
         <EntityTypeShape EntityType="BankModel.Card" Width="1.5" PointX="3" PointY="5.625" />
         <AssociationConnector Association="BankModel.FK__Cards__accountId__619B8048" />

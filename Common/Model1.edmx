@@ -89,7 +89,7 @@
             <PropertyRef Name="accountId" />
           </Key>
           <Property Name="accountId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="accountNumber" Type="Int32" Nullable="false" />
+          <Property Name="IBAN" Type="String" Nullable="false" />
           <Property Name="accountType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="firstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="lastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
@@ -110,7 +110,7 @@
           <Property Name="accountId" Type="Int32" Nullable="false" />
           <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="amount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
-          <Property Name="timeTaken" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="timeStamp" Type="DateTime" Nullable="false" />
           <Property Name="status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="Account" Relationship="Self.transactions_accountid_fkey" FromRole="Transactions" ToRole="Accounts" />
         </EntityType>
@@ -173,7 +173,7 @@
             <EntityTypeMapping TypeName="BankModel.Account">
               <MappingFragment StoreEntitySet="Accounts">
                 <ScalarProperty Name="accountId" ColumnName="accountid" />
-                <ScalarProperty Name="accountNumber" ColumnName="accountnumber" />
+                <ScalarProperty Name="IBAN" ColumnName="accountnumber" />
                 <ScalarProperty Name="accountType" ColumnName="accounttype" />
                 <ScalarProperty Name="firstName" ColumnName="firstname" />
                 <ScalarProperty Name="lastName" ColumnName="lastname" />
@@ -193,7 +193,7 @@
                 <ScalarProperty Name="accountId" ColumnName="accountid" />
                 <ScalarProperty Name="type" ColumnName="type" />
                 <ScalarProperty Name="amount" ColumnName="amount" />
-                <ScalarProperty Name="timeTaken" ColumnName="timetaken" />
+                <ScalarProperty Name="timeStamp" ColumnName="timetaken" />
                 <ScalarProperty Name="status" ColumnName="status" />
               </MappingFragment>
             </EntityTypeMapping>
